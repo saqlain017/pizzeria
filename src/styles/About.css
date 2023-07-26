@@ -1,0 +1,43 @@
+.about {
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  
+  .aboutTop {
+    flex-basis: 40%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  .aboutBottom {
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+  }
+  .aboutBottom h1{
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+  .aboutBottom h2,
+  p{
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width:600px) {
+    .about{
+      flex-direction: column;
+      height: 900px;
+    }
+    .aboutBottom {
+      padding: 5px 10px;
+    }
+    .aboutBottom h1{
+      text-align: center;
+    }
+  }
